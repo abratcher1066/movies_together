@@ -9,7 +9,8 @@ const api_routes = require("./routes/api_routes");
 // -- CREATE AN `EXPRESS` INSTANCE -- //
 const app = express();
 // -- DEFINE A PORT -- //
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
+
 
 // Connect to mongoose
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/movieshare", { useNewUrlParser: true });
@@ -21,6 +22,12 @@ app.use(express.json());
 // -- TELL EXPRESS WHERE OUR STATIC FILES ARE LOCATED -- //
 app.use(express.static("public"));
 
+app.use("*", (req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000")
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS")
+  res.setHeader("Access-Control-Allow-Headers", "Origin, Accept, Content-Type, Authorization")
+  next()
+})
 // ================================== // 
 // -- Activity Syntax -> Passing App INSTANCE to Route -- //
 //require("./routes/html_routes")(app);

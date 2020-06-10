@@ -4,10 +4,10 @@ import "./style.css";
 export default class Header extends Component {
   render() {
     return (
-      <div id="jumbotronMain" class="container-fluid">
+      <div id="jumbotronMain" className="container-fluid">
       <h1>Welcome to Movie Together</h1>
-        <div class="blurb">
-          <p>Bring friend and family have a best experience together</p>
+        <div className="blurb">
+          <p>Bringing friends and family together to share movie experiences.</p>
         </div>
       </div>
       

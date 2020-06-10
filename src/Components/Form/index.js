@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "./style.css";
+import $ from "jquery";
 
 class Form extends Component {
   // Setting the component's initial state
   state = {
-    userName: "",
+    username: "",
     password: ""
   };
 
@@ -22,6 +23,11 @@ class Form extends Component {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
 
+    $.ajax(process.env.REACT_APP_API_URL + "/api/passwordcheck", {
+      type: "POST",
+      data: this.state
+    }).then(result => console.log(result));
+
     
    
   };
@@ -29,25 +35,25 @@ class Form extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-      <div class="container-fluid">
-        <div class="row justify-content-md-center">
+      <div className="container-fluid">
+        <div className="row justify-content-md-center">
         
         <form className="form-inline">
-        <div class="form-group row">
-        <label for="inputUserName" class="col-sm-2 col-form-label">Username</label>
-        <div class="col-sm-6">
+        <div className="form-group row">
+        <label htmlFor="inputUserName" className="col-sm-2 col-form-label">Username</label>
+        <div className="col-sm-6">
           <input
-            value={this.state.usertName}
-            name="userName"
+            value={this.state.username}
+            name="username"
             onChange={this.handleInputChange}
             type="text"
             placeholder="username"
           />
            </div>
         </div>
-        <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-6">
+        <div className="form-group row">
+        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
+        <div className="col-sm-6">
           <input
             value={this.state.password}
             name="password"
@@ -57,9 +63,9 @@ class Form extends Component {
           />
           </div>
           </div>
-          <div class="form-group row">
-          <div class="col-sm-6">
-          <button class="btn btn-primary" onClick={this.handleFormSubmit}>Login</button>
+          <div className="form-group row">
+          <div className="col-sm-6">
+          <button className="btn btn-primary" onClick={this.handleFormSubmit}>Login</button>
           </div>
           </div>
         </form>
