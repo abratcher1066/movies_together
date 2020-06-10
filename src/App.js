@@ -6,7 +6,7 @@ import User from "./pages/User";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Wrapper from "./Components/Wrapper";
-
+import Register from "./pages/Register";
 function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/Home" component={Home} />
           <Route exact path="/Movies" component={Movies} />
           <Route exact path="/User" component={User} />
+          <Route exact path="/Register" component={Register} />
           <Footer />
         </Wrapper>
       </div>
