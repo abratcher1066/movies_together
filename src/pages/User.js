@@ -6,7 +6,7 @@ function User() {
   return (
     <div>
       
-      <Hero backgroundImage="https://wallpaperplay.com/walls/full/4/4/e/51812.jpg#.Xt7fVFQ4qhQ.link">
+      <Hero backgroundImage="https://wallpaperplay.com/walls/full/b/4/4/2955.jpg#.XuBFlxP4OPw.link">
       <Header/>
       <Nav/>
       </Hero>

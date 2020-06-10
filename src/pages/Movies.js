@@ -6,7 +6,7 @@ function Movies() {
   return (
     <div>
       
-      <Hero backgroundImage="https://wallpaperplay.com/walls/full/4/4/e/51812.jpg#.Xt7fVFQ4qhQ.link">
+      <Hero backgroundImage="https://wallpaperplay.com/walls/full/c/1/2/109045.jpg#.XuBK_Xe4FaQ.link">
       <Header/>
       <Nav/>
       </Hero>
