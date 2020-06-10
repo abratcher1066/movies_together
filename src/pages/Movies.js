@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Nav from "../components/Nav";
-import Header from "../components/Header";
+import Hero from "../Components/Hero";
+import Nav from "../Components/Nav";
+import Header from "../Components/Header";
 function Movies() {
   return (
     <div>

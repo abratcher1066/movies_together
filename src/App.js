@@ -1,11 +1,12 @@
 import React from "react";
+import MainContainer from './Components/MainContainer'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Movies from "./pages/Movies";
 import Home from "./pages/Home";
 import User from "./pages/User";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Wrapper from "./Components/Wrapper";
 
 function App() {
   return (
@@ -21,16 +22,6 @@ function App() {
         </Wrapper>
       </div>
     </Router>
-
-import React from 'react';
-import MainContainer from './Components/MainContainer'
-
-function App() {
-  return (
-    <div>
-      <MainContainer />
-    </div>
-
   );
 }
 
