@@ -6,17 +6,19 @@ const router = express.Router();
 // -- USE MVC ARCHITECTURE --> HAVE CLEAN ROUTES AND MOVE THE LOGIC TO THE /CONTROLLERS DIRECTORY -- //
 
 router.post("/createuser", function(req, res) {
-    db.User.create(req.body);
+    User.create(req.body);
 });
 
-router.get("/passwordcheck/:username/:password", function(req, res){
-    User.findOne({username: req.params.username}).then(user => {
-        if(user.password == req.params.password){
+router.post("/passwordcheck", function(req, res){
+    
+    User.findOne({username: req.body.username}).then(user => {
+        if(user.password == req.body.password){
             res.json(true);
         } else{
             res.json(false);
         }
     });
+    
 });
 
 
