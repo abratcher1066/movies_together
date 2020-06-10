@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero";
-//import Nav from "../components/Nav";
-import Header from "../components/Header";
-import Form from "../components/Form";
+import Hero from "../Components/Hero";
+//import Nav from "../Components/Nav";
+import Header from "../Components/Header";
+import Form from "../Components/Form";
 function Home() {
   return (
     <div>
