@@ -39,6 +39,14 @@ function Navbar() {
               Movie
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/Newuser"
+              className={window.location.pathname === "/Newuser" ? "nav-link active" : "nav-link"}
+            >
+              Sign Up
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -46,3 +54,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

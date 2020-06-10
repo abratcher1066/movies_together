@@ -1,0 +1,27 @@
+.searchbox button {
+    border: 1px solid #101D42;
+}
+
+.searchbox button:hover {
+    background-color: #101D42;
+   
+}
+
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.container-fluid {
+  background-color: #c2d4ddde;
+  padding-bottom: 10px;
+}
+
+div {
+  white-space: pre-wrap;
+} 
