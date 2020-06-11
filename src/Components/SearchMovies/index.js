@@ -1,10 +1,11 @@
 import React from "react";
-import "./SearchBox.css";
+import "../SearchBox/SearchBox.css";
 
-function SearchBox({ handleSearchChange }) {
+function SearchMovies({ handleSearchChange }) {
   return (
     <div className="searchbox">
       <form className="form-inline">
+      <label htmlFor="inputMovieName" className="col-sm-3 col-form-label">Movie</label>
         <input
           className="form-control"
           type="search"
@@ -16,4 +17,4 @@ function SearchBox({ handleSearchChange }) {
     </div>
   );
 }
-export default SearchBox;
+export default SearchMovies;
