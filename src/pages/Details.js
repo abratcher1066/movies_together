@@ -6,7 +6,7 @@ import Header from "../Components/Header";
 function Details(props) {
   return (
     <div>
-      {console.log(props.movieName)}
+      {console.log("props.movieName: " + props.match.params.movieName + " " + props.match.params.streamingService)}
       <Hero backgroundImage="https://wallpaperplay.com/walls/full/b/4/4/2955.jpg#.XuBFlxP4OPw.link">
       <Header/>
       <Nav/>
