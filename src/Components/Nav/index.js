@@ -3,7 +3,6 @@ import React from "react";
 
 import "./Nav.css";
 import MainContainer from "../MainContainer";
-=======
 
 import "./Nav.css";
 import SearchBox from "../SearchBox";

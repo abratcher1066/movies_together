@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import "./style.css";
 import $ from "jquery";
 
-export default class Newuser extends Component{
+export default class Newuser extends React.Component{
   state = {
     firstName: '',
     lastName: '',

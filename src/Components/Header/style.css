@@ -1,13 +1,11 @@
 #jumbotronMain {
     margin-top: 0px;
-    
     background-color: #c2d4ddde;
 }
 h1 {
     color: blue;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
 }
 .blurb {
     text-align: center;
