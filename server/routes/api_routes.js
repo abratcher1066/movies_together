@@ -17,6 +17,9 @@ router.post("/passwordcheck", function(req, res){
         } else{
             res.json(false);
         }
+    }).catch(err => {
+      console.log("This is the error: " + err);
+      res.json(false);
     });
     
 });
