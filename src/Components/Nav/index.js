@@ -1,7 +1,13 @@
 import React from "react";
-//import SearchBox from "../SearchBox";
+
+
 import "./Nav.css";
 import MainContainer from "../MainContainer";
+=======
+
+import "./Nav.css";
+import SearchBox from "../SearchBox";
+
 
 function Nav({ handleSearchChange }) {
   return (
