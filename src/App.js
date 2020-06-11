@@ -1,10 +1,9 @@
 import React from "react";
-import MainContainer from './Components/MainContainer'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Movies from "./pages/Movies";
 import Home from "./pages/Home";
 import User from "./pages/User";
-import Register from "./pages/Register";
+//import Register from "./pages/Register";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Wrapper from "./Components/Wrapper";

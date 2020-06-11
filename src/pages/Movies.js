@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../Components/Hero";
 import Nav from "../Components/Nav";
 import Header from "../Components/Header";
+
 function Movies() {
   return (
     <div>
@@ -10,7 +11,6 @@ function Movies() {
       <Header/>
       <Nav/>
       </Hero>
-      
     </div>
   );
 }
