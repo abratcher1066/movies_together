@@ -3,6 +3,7 @@ import Hero from "../Components/Hero";
 import NavM from "../Components/NavM";
 import Header from "../Components/Header";
 import MainContainer from "../Components/MainContainer"
+
 function Movies() {
   return (
     <div>
@@ -12,7 +13,6 @@ function Movies() {
       <NavM/>
       <MainContainer/>
       </Hero>
-      
     </div>
   );
 }

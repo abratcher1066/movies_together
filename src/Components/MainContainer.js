@@ -1,10 +1,27 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import SearchResults from "./SearchResults";
+import SearchForm from "./SearchForm";
 
 class MainContainer extends Component {
   state = {
-    movies: []
+    movies: [],
+    search: ""
+  }
+
+  handleInputChange = (event) => {
+    const {name, value} = event.target;
+
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    this.getMovie(this.state.search);
+    //API.getDogsOfBreed(this.state.search)
+    //.then(res => this.setState({dogsArr: res.data.message}));
   }
 
   getMovie = movieName => {
@@ -25,14 +42,18 @@ class MainContainer extends Component {
     });
   }
 
-  componentDidMount() {
-    this.getMovie("Mad Max");
-    
-  }
+  // componentDidMount() {
+  //   this.getMovie("Mad Max");
+  // }
 
   render() {
     return (
       <div>
+        <SearchForm 
+          value={this.state.search}
+          handleInputChange={this.handleInputChange}
+          handleFormSubmit={this.handleFormSubmit}
+        />
         <SearchResults movies={this.state.movies}/>
       </div>
     )
