@@ -1,14 +1,14 @@
 import React from "react";
 import Hero from "../Components/Hero";
-import Nav from "../Components/Nav";
 import Header from "../Components/Header";
+import Newuser from "../Components/Newuser";
 function Register() {
   return (
     <div>
       
-      <Hero backgroundImage="https://wallpaperplay.com/walls/full/b/4/4/2955.jpg#.XuBFlxP4OPw.link">
+      <Hero backgroundImage="https://wallpaperplay.com/walls/full/a/1/f/57629.jpg#.XuEK4_RqnVM.link">
       <Header/>
-      <Nav/>
+      <Newuser/>
       </Hero>
       
     </div>

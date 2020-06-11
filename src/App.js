@@ -1,15 +1,12 @@
 import React from "react";
-import MainContainer from './Components/MainContainer'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Movies from "./pages/Movies";
 import Home from "./pages/Home";
 import User from "./pages/User";
-import Register from "./pages/Register";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Wrapper from "./Components/Wrapper";
-import Newuser from "./Components/Newuser";
-
+import Register from "./pages/Register";
 function App() {
   return (
     <Router>
@@ -20,11 +17,14 @@ function App() {
           <Route exact path="/Home" component={Home} />
           <Route exact path="/Movies" component={Movies} />
           <Route exact path="/User" component={User} />
-          <Route exact path="/Newuser" component={Newuser} />
+          <Route exact path="/Register" component={Register} />
           <Footer />
         </Wrapper>
       </div>
     </Router>
+
+
+
   );
 }
 
