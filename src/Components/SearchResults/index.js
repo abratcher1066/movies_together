@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './style.css';
 // Define route in App.js (or wherever) with a wildcard for the id
 // React router use wildcards
 // On the page itself, get the wildcard entered (google React router get wildcard value)
@@ -13,13 +13,11 @@ function SearchResults(props) {
     <ul>
       {props.movies.map(movie => (
         <li>
-          {console.log(movie)}
-
           {movie.locations.map(loc => (
             <div>
                 <a href={`/Details/${movie.name}/${loc.display_name}`}> 
-                    <p>{movie.name}</p>
-                    <img alt="streamingService" src={loc.icon} />
+                    <p className="movieName">{movie.name}     </p>
+                    <img className="streamLogo" alt="streamingService" src={loc.icon} />
                 </a>
             </div>
           ))}
