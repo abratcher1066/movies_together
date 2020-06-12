@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../Components/Hero";
-import Nav from "../Components/Nav";
 import Header from "../Components/Header";
 import $ from "jquery";
 
@@ -23,11 +22,9 @@ function Details(props) {
     return (
         <div>
             {console.log("props.movieName: " + props.match.params.movieName + " " + props.match.params.streamingService)}
-            <Hero backgroundImage="https://wallpaperplay.com/walls/full/b/4/4/2955.jpg#.XuBFlxP4OPw.link">
-                <Header />
-                <Nav />
-            </Hero>
-
+            <Hero backgroundImage="https://wallpaperplay.com/walls/full/3/5/3/198525.jpg#.XuLOgzsDOxU.link">
+              
+           </Hero>
         </div>
     );
 }

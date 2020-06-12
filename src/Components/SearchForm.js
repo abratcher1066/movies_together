@@ -5,10 +5,7 @@ function SearchForm(props) {
     <div className="container">
     <div className="row justify-content-md-center">
     <form className="form-inline">
-      <div className="form-group row">
-        <label htmlFor="search" className="col-sm-4 col-form-label">Movies or Shows:</label>
-        <div className="col-sm-6">
-        <input
+         <input
           onChange={props.handleInputChange}
           value={props.value}
           name="search"
@@ -17,14 +14,10 @@ function SearchForm(props) {
           placeholder="Movies or Shows name"
           id="search"
         />
-        </div>
-        </div>
-          <div className="form-group row">
-          <div className="col-sm-6">
+          <div className="col-sm-4">
         <button onClick={props.handleFormSubmit} className="btn btn-primary">
           Search
         </button>
-      </div>
       </div>
     </form>
     </div>
