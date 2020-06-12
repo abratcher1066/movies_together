@@ -3,32 +3,44 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Movies from "./pages/Movies";
 import Home from "./pages/Home";
 import User from "./pages/User";
-import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Wrapper from "./Components/Wrapper";
 import Register from "./pages/Register";
 import Details from "./pages/Details";
 
-function App() {
-  return (
-    <Router>
-      <div>
-          <Navbar />
+class App extends React.Component {
+  state = {
+    loginSuccessful: false
+  }
+
+  componentDidMount(){
+    // check for cookie, if it's there, update loginSuccessful to true
+  }
+
+  setLogin = (val) => {
+    // if val is true, set the cookie; if not delete cookie
+
+    this.setState({ loginSuccessful: val });
+  }
+
+  render() {
+    return (
+      <Router>
+        <div>
           <Wrapper>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/Home" component={Home} />
-          <Route exact path="/Movies" component={Movies} />
-          <Route exact path="/User" component={User} />
-          <Route exact path="/Register" component={Register} />
-          <Route exact path="/Details/:movieName/:streamingService" component={Details} />
-          <Footer />
-        </Wrapper>
-      </div>
-    </Router>
-
-
-
-  );
+            <Route exact path="/" component={() => <Home setLogin={this.setLogin} loginSuccessful={this.state.loginSuccessful} />} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/movies" component={() => <Movies loginSuccessful={this.state.loginSuccessful} />} />
+            <Route exact path="/user" component={() => <User loginSuccessful={this.state.loginSuccessful} />} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/details/:movieName/:streamingService/" component={Details} />
+            <Footer />
+          </Wrapper>
+        </div>
+      </Router>
+    );
+  
+  }
 }
 
 export default App;

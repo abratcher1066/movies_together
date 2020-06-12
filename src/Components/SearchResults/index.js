@@ -15,7 +15,7 @@ function SearchResults(props) {
         <li>
           {movie.locations.map(loc => (
             <div className="result">
-                <a href={`/Details/${movie.name}/${loc.display_name}`}> 
+                <a href={`/details/${movie.name}/${loc.display_name}`}> 
                     <p className="movieName">{movie.name}     </p>
                     <img className="streamLogo" alt="streamingService" src={loc.icon} />
                 </a>
