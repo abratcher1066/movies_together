@@ -17,16 +17,20 @@ const getImdb = movieName => {
     });
 }
 
-function Details(props) {
+class Details extends React.Component {
+    render() {
+        return (
+            <div>
+                {console.log("props.movieName: " + this.props.match.params.movieName + " " + this.props.match.params.streamingService)}
+                <Hero backgroundImage="https://wallpaperplay.com/walls/full/b/4/4/2955.jpg#.XuBFlxP4OPw.link">
+                    <Header />
+                    <Nav />
+                </Hero>
 
-    return (
-        <div>
-            {console.log("props.movieName: " + props.match.params.movieName + " " + props.match.params.streamingService)}
-            <Hero backgroundImage="https://wallpaperplay.com/walls/full/3/5/3/198525.jpg#.XuLOgzsDOxU.link">
-              
-           </Hero>
-        </div>
-    );
+
+            </div>
+        );
+    }
 }
 
 export default Details;
