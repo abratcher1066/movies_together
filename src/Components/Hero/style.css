@@ -24,12 +24,13 @@
 
 .hero h1, .hero h2 {
   color:black;
-  font-family: 'Raleway', sans-serif;
+ 
 }
 
 .hero h1 {
   font-size: 60px;
   padding-top: 25px;
   margin-top: 0;
+  font-family: 'Aclonica', sans-serif;
 }
 

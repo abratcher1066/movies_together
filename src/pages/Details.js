@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../Components/Hero";
-import Nav from "../Components/Nav";
 import Header from "../Components/Header";
 import $ from "jquery";
 
@@ -27,6 +26,7 @@ class Details extends React.Component {
                     <Header />
                     <Nav />
                 </Hero>
+
 
             </div>
         );
