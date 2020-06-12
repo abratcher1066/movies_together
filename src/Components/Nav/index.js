@@ -8,7 +8,7 @@ function Nav({ handleSearchChange }) {
   return (
     <div className="navbar-collapse row" id="navbarNav">
     <nav className="navbar ">
-        <MainContainer />
+    <MainContainer />
     </nav>
     </div>
   );
