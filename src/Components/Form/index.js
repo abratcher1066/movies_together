@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import "./style.css";
 import $ from "jquery";
 
+
 class Form extends Component {
   // Setting the component's initial state
   state = {
@@ -74,7 +75,7 @@ class Form extends Component {
                     value={this.state.password}
                     name="password"
                     onChange={this.handleInputChange}
-                    type="text"
+                    type="password"
                     placeholder="password"
                   />
                 </div>
