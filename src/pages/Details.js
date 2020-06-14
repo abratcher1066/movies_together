@@ -49,7 +49,7 @@ class Details extends React.Component {
                                 <h5 className="card-title">Year: {this.state.movie.Year}</h5>
                                 <p className="card-text">{this.state.movie.Plot}</p>
                                 {/* eslint-disable-next-line */}
-                                <a href="#" className="btn btn-primary">Schedule on {this.props.match.params.streamingService}</a>
+                                <a href={`/schedule/${this.props.match.params.movieName}/${this.props.match.params.streamingService}`} className="btn btn-primary">Schedule on {this.props.match.params.streamingService}</a>
                             </div>
                         </div>    
                 </div>  
