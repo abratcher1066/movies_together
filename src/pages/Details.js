@@ -1,7 +1,5 @@
 import React from "react";
 import Hero from "../Components/Hero";
-//import Header from "../Components/Header";
-//import Nav from "../Components/Nav";
 import Navbar from "../Components/Navbar";
 import $ from "jquery";
 
@@ -34,12 +32,17 @@ class Details extends React.Component {
         return (
             <div>
                 <Navbar />
+                <Hero backgroundImage="https://wallpaperplay.com/walls/full/6/f/b/137808.jpg#.XuWZqZdzXB8.link">
                 {console.log("props.movieName: " + this.props.match.params.movieName + " " + this.props.match.params.streamingService)}
-                <Hero backgroundImage="https://wallpaperplay.com/walls/full/b/4/4/2955.jpg#.XuBFlxP4OPw.link">
-                <div className="card">
-                        <img className="card-img-top" src={this.state.movie.Poster} style={{width: "400px", margin: "auto", paddingTop: "50px"}} alt="Movie Poster"></img>
-                        
-                            <div className="card-body">
+                <div className="container-fluid">
+                <div className="row justify-content-md-center">   
+                <div className="card col-md-7"  >
+                <div className="row no-gutters">
+                        <div className="col-md-7">
+                        <img className="card-img-top" src={this.state.movie.Poster} style={{width: "300px", margin: "auto", paddingTop: "30px", paddingBottom: "30px"}} alt="Movie Poster"></img>
+                        </div> 
+                        <div className="col-md-4">
+                            <div className="card-body ">
                                 <h5 className="card-title">Title: {this.state.movie.Title}</h5>
                                 <h5 className="card-title">Director: {this.state.movie.Director}</h5>
                                 <h5 className="card-title">Genre: {this.state.movie.Genre}</h5>
@@ -48,7 +51,11 @@ class Details extends React.Component {
                                 {/* eslint-disable-next-line */}
                                 <a href="#" className="btn btn-primary">Schedule on {this.props.match.params.streamingService}</a>
                             </div>
-                    </div> 
+                        </div>    
+                </div>  
+                </div>
+                </div>
+                </div> 
                 </Hero>
                 
 

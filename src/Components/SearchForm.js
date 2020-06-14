@@ -3,25 +3,22 @@ import React from "react";
 function SearchForm(props) {
   return (
     <div className="container">
-    <div className="row justify-content-md-center">
-    <form className="form-inline">
-         <input
+      <form className="form-inline md-form mr-4 mb-4">
+         <input class="form-control mr-sm-2"
           onChange={props.handleInputChange}
           value={props.value}
           name="search"
           type="text"
-          className="form-control"
           placeholder="Movies or Shows name"
           id="search"
         />
-          <div className="col-sm-4">
-        <button onClick={props.handleFormSubmit} className="btn btn-primary">
+       
+        <button onClick={props.handleFormSubmit} className="btn btn-primary ">
           Search
         </button>
-      </div>
-    </form>
+      </form>
     </div>
-    </div>
+   
   );
 }
 
