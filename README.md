@@ -1,16 +1,42 @@
 # Movies Together - Group Project
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/tanksareforcowards/movies_together)
-![GitHub followers](https://img.shields.io/github/followers/tummanoon77?label=Follow&style=social)
+
+![GitHub followers](https://img.shields.io/github/followers/koutron?label=Follow%20Kouros&style=social)
+
+![GitHub followers](https://img.shields.io/github/followers/tummanoon77?label=Follow%20Tummanoon&style=social)
+
+![GitHub followers](https://img.shields.io/github/followers/tanksareforcowards?label=Follow%20Andrew&style=social)
+
+![GitHub followers](https://img.shields.io/github/followers/RexAnuforo?label=Follow%20Rex&style=social)
+
 
 **Github Repo:**
+https://github.com/koutron/movies_together
+
 https://github.com/tummanoon77/movies_together
+
+https://github.com/tanksareforcowards/movies_together
+
+https://github.com/RexAnuforo/movies_together
+
 
 **Deployed:**
 
 ## Description
 
 ## The Tech
+
+* HTML/CSS
+* Bootstrap
+* JavaScript
+* Express
+* React
+* Mongoose
+* Node.js
+* Git
+* Github
+* Jquery
 
 ## New Tech Used:
 
@@ -29,6 +55,8 @@ node server.js
 * [Rex](https://github.com/RexAnuforo)
 
 ## Screenshot
+
+![screenshot](https://i.imgur.com/jZuxgTj.png)
 
 ## License
 
