@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import $ from "jquery";
-import SearchResults from "./SearchResults";
-import SearchForm from "./SearchForm";
-
+import SearchResults from "../SearchResults";
+import SearchForm from "../SearchForm";
+import "./MainContainer.css"
 class MainContainer extends Component {
   state = {
     movies: [],
@@ -48,13 +48,17 @@ class MainContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container-fluid">
+      <div className="row justify-content-md-center">
+      <div ClassName="main">
         <SearchForm 
           value={this.state.search}
           handleInputChange={this.handleInputChange}
           handleFormSubmit={this.handleFormSubmit}
         />
         <SearchResults movies={this.state.movies}/>
+      </div>
+      </div>
       </div>
     )
   }

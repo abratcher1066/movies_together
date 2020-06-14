@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-// Connect to mongoose
+// Connect to mongoosey
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/movieshare", { useNewUrlParser: true });
 
 // -- PARSE FORM (CLIENT-SIDE) INPUTS -- //
