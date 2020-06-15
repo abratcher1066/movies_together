@@ -77,16 +77,25 @@ function Schedule(props) {
   }
 
   return (
-        <div>
+<>
+<Hero backgroundImage="https://wallpaperplay.com/walls/full/0/f/0/124138.jpg#.XucH0OBWFuY.link">
+       
+        <div className="container-fluid">
+                <div className="row justify-content-md-center">   
+                <div className="card col-md-7"  >
           {/*<Navbar />
-          <Hero backgroundImage="https://wallpaperplay.com/walls/full/c/1/2/109045.jpg#.XuBK_Xe4FaQ.link">
+          
             <Nav/>
-          </Hero>*/}
+          */}
           <Calendar showWeekNumbers onChange={onChange} value={date} style={{width: "500px"}}/>
           {console.log(date)}
           {date.toString()}
           <button onClick={handleClick}>Schedule a MovieTogether</button>
       </div>
+                </div>
+                </div>
+</Hero>
+      </>
   );
 }
 

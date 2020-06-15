@@ -40,11 +40,13 @@ https://github.com/RexAnuforo/movies_together
 
 ## New Tech Used:
 
+* Google calendar
+
 **Run in Command Line**
 
-npm install 
-npm start
-node server.js
+* npm install 
+* npm start
+* node server.js
 
 ## Tests
 
